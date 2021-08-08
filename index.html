@@ -8,6 +8,7 @@
     <title>CV Darya Gorbachova</title>
 </head>
 <body>
+    <div id='container'>
     <main>
     <article>
     <div class='text'>
@@ -62,20 +63,24 @@
     </div>
     
     <div id='courses'><h4>Courses:</h4>
-        <p>Currently I'm studying Front-end in general at <b>RSSchool</b> and JavaScript at <a href='ru.code-basics.com'>ru.code-basics.com</a>.</p>
-        <p> I've already completed an <i>>HTML</i> course and <i>CSS</i> course at <a href='ru.code-basics.com'>ru.code-basics.com</a> and 
+        <p>Currently I'm studying Front-end at <b>RSSchool</b></p>
+        <p> I've already completed an <i>>HTML</i> course, <i>JavaScript</i> and <i>CSS</i> course at <a href='https://ru.code-basics.com/'>ru.code-basics.com</a> and 
             attanded Summer Bootcamp from EPAM.</p>
     </div>
     
-    <div id='code'><h4>Code example (CSS):</h4>
-    <pre>    .text {
-        font: 16px/24px Verdana, sans-serif;
-        color: #202020; 
-        background-color: rgb(255,255,255,0.8);
-        border: solid 2px #202020;
-        margin-bottom: 15px;
-        margin-right:auto;
-        width: 1030px;
+    <div id='code'><h4>Code example (JS):</h4>
+    <pre>    var Calculator = {
+     average: function() {
+     let result = 0;
+     if (arguments.length === 0) return 0;
+     for(let i = 0; i < arguments.length; i++) {
+     if (arguments[i]%1 !==0) return 'integer expected!';
+     result += arguments[i]; 
+   }
+     result = result / arguments.length;
+   return result;
+ }
+};
     }</pre>
      </div>
     
@@ -90,10 +95,11 @@
         <p>vrindavaneshvari2002@gmail.com</p>
         <p><a href='https://github.com/DaryaGorbachova'>My Github account</a></p>
         <time datetime='2021-07-26'>July, 26 2021</time>
-        <img src='https://rs.school/images/rs_school_js.svg' alt='RSSchool logo' width='1000'>
+        <img src='https://rs.school/images/rs_school_js.svg' alt='RSSchool logo' width='100'>
         <p><a href='https://rs.school/js/'>RSSchool course: Front-end</a></p>
     </footer>
     </article>
     </main>
+    </div>
 </body>
 </html>
