@@ -8,28 +8,25 @@
     <title>CV Darya Gorbachova</title>
 </head>
 <body>
-    <div id='container'>
+    <div class='container'>
     <main>
+<nav>
+    <div class='menu'>
+        <a href='#contact'>Contact</a>
+        <a href='#qualities'>Qualities</a>
+        <a href='#skills'>Skills</a>
+        <a href='#apps'>Apps</a>
+        <a href='#courses'>Courses</a>
+        <a href='#code'>Code</a>
+        <a href="#projects">Projects</a>
+        <a href='#english'>Languages</a>
+</div>
+</nav> 
     <article>
     <div class='text'>
     <header><h1>CV</h1>
     </header>
-
-
-    <div id='menu'>
-    <ul>
-        <li><a href='#contact'>Contact information</a></li>
-        <li><a href='#qualities'>My qualities</a></li>
-        <li><a href='#skills'>My skills</a></li>
-        <li><a href='#apps'>Programs that I work with</a></li>
-        <li><a href='#courses'>Completed courses and courses I am attending now</a></li>
-        <li><a href='#code'>Code example</a></li>
-        <li><a href='#english'>My English level and experience</a></li>
-
-
-
-    </ul>
-</div>
+        <img id='avatar' src="avatar.png" alt="avatar">
 
     <div id='contact'><h4>Contact information:</h4>
         <ul>
@@ -49,6 +46,7 @@
             <li>HTML </li>
             <li>JavaScript</li>
             <li>CSS</li>
+            <li>DOM</li>
             <li>Python (basics).</li> 
         </ul>
     </div>
@@ -63,39 +61,63 @@
     </div>
     
     <div id='courses'><h4>Courses:</h4>
-        <p>Currently I'm studying Front-end at <b>RSSchool</b></p>
-        <p> I've already completed an <i>>HTML</i> course, <i>JavaScript</i> and <i>CSS</i> course at <a href='https://ru.code-basics.com/'>ru.code-basics.com</a> and 
-            attanded Summer Bootcamp from EPAM.</p>
+
+        <ul>
+            <li><a href='https://ru.code-basics.com/'><i>HTML</i> course</a></li>
+            <li><a href="https://ru.code-basics.com/"><i>CSS</i> course</a></li>
+            <li><a href="https://ru.code-basics.com/"><i>JavaScript</i> course</a></li>
+            </ul>
+        <p>Currently I'm studying Front-end at <b>RSSchool Stage1</b></p>            
+            <p>Also I attended:</p>
+            <ul>
+            <li><i>Summer Bootcamp</i> from EPAM </li>
+            <li><i>RSSchool Stage0</i></li>
+        </ul>
     </div>
     
-    <div id='code'><h4>Code example (JS):</h4>
-    <pre>    var Calculator = {
-     average: function() {
-     let result = 0;
-     if (arguments.length === 0) return 0;
-     for(let i = 0; i < arguments.length; i++) {
-     if (arguments[i]%1 !==0) return 'integer expected!';
-     result += arguments[i]; 
-   }
-     result = result / arguments.length;
-   return result;
- }
-};
-    }</pre>
-     </div>
+    <h4>Code example (JS):</h4>
+    <pre id='code' style='padding: 0'>    <span style='color: var(--orange);'>function</span> odds(<span style='color: var(--orange)'>values</span>){
+        <span style='color: var(--red)'>let</span> <span style='color: var(--orange)'>result</span> = [];
+        <span style='color: var(--red)'>let</span> <span style='color: var(--orange)'>j</span> = 0
+        <span style='color: var(--blue)'>for</span> <span style='color: var(--red)'>let</span> <span style='color: var(--orange)'>i</span> = 0; <span style='color: var(--orange)'>i</span> values.length; <span style='color: var(--orange)'>i</span>++) {
+            <span style='color: var(--blue)'>if</span> (values[i] % 2 === 0) continue
+          result[j] = values[i];
+          j = j + 1;
+        }
+        return result;
+      }
+    </pre>
+<div id='projects'>
+    <a > <h4>Recent Projects</h4></a>
+        <a href="https://rolling-scopes-school.github.io/daryagorbachova-JSFEPRESCHOOL/photofilter/index"><h3>Photofilter</h3></a>
+            <p>Photofilter was created as a part of the task of RSSchool Stage0. The site offers a number of 
+                opportunities: presets, reset, custom filters, CSS Code and a slider.</p>
+        <a href="https://rolling-scopes-school.github.io/daryagorbachova-JSFEPRESCHOOL/photofilter/index"><img src="photofilter.png" alt='photofilter' width='600'></a>
+
+        <a href="https://rolling-scopes-school.github.io/daryagorbachova-JSFEPRESCHOOL/vertical-slider/slider"><h3>Vertical-slider</h3></a>
+        <p>The slider was the first real project ever. Apart of watching and enjoying the nature's beauty,
+            it offers the possibility of relaxation with the given playlist. Music is individual for each slide. </p>
+        <a href="https://rolling-scopes-school.github.io/daryagorbachova-JSFEPRESCHOOL/vertical-slider/slider"><img src="slider.png" alt='slider' width='600'></a>
+    </div>
     
-    <div id='english'><h4>English:</h4>
-        <p>My English level is <i>C1</i>. I study at Minsk Linguistic University. There I have a lot of opportunities to practice my English.
+    <div id='english'><h4>Languages:</h4>
+<ul>
+    <li>English (C1)</li>
+    <li>Russian (C2)</li>
+    <li>Belarussian (C2)</li>
+    <li>French (A1)</li>
+</ul>
+        <p>I study at Minsk Linguistic University. There I have a lot of opportunities to practice my English.
     I do translations of English poems and stories into Belarusian language and improve my language skills.</p>
     </div>
-</div>
+ </div>   
 
     <footer>
         <p>Darya Gorbachova</p>
         <p>vrindavaneshvari2002@gmail.com</p>
         <p><a href='https://github.com/DaryaGorbachova'>My Github account</a></p>
-        <time datetime='2021-07-26'>July, 26 2021</time>
-        <img src='https://rs.school/images/rs_school_js.svg' alt='RSSchool logo' width='100'>
+        <time datetime='2021-09-15'><b>2021</b></time><br>
+        <p><img src='https://rs.school/images/rs_school_js.svg' alt='RSSchool logo' width='100'></p>
         <p><a href='https://rs.school/js/'>RSSchool course: Front-end</a></p>
     </footer>
     </article>
